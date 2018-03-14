@@ -9,6 +9,7 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/cssanimation.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -19,18 +20,34 @@
     </div>
 </nav>
 
-<div class="jumbotron text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2 class="head">СИСТЕМА УПРАВЛЕНИЯ ПРОИЗВОДСТВОМ НА ПРЕДПРИЯТИИ «ФЭД»</h2>
-                <p class="lead">Первый подробный кейс-стади в области 4.0 в Украине описывает детали реализации системы управления предприятием <br>IT-Enterprise.SmartFactory на харьковском машиностроительном заводе «ФЭД»</p>
-                <a href="#download"><button type="button" class="btn btn-lg btn-outline-info">Скачать</button></a>
-                <a href="#info"><button type="button" class="btn btn-lg btn-outline-warning">Описание</button></a>
+<section class="hero">
+    <div class="hero-text">
+        <div class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=""><h2 class="head">СИСТЕМА УПРАВЛЕНИЯ ПРОИЗВОДСТВОМ <br>НА ПРЕДПРИЯТИИ «ФЭД»</h2></div>
+                        <p class="lead">Первый подробный кейс-стади в области 4.0 в Украине описывает детали реализации системы управления предприятием <br>IT-Enterprise.SmartFactory на харьковском машиностроительном заводе «ФЭД»</p>
+                        <a href="#download"><button type="button" class="btn btn-lg btn-outline-info">Скачать</button></a>
+                        <a href="#info"><button type="button" class="btn btn-lg btn-outline-warning">Описание</button></a>
+                        <div class="cssanimation hu__hu__"><a href="#info"><h2 class="mdl-typography--display-1 mdl-color-text--white"><img src="img/arrow-down.svg" class="down mdl-cell--hide-tablet mdl-cell--hide-phone"></h2></a></div>
+                        <style>
+                            .hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+                            @keyframes hu__hu__ {
+                                50% { transform: translateY(30px) }
+                            }
+                        </style>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="video-overlay"></div>
+    <video class="hero-video" height="1000px" preload="" loop="" autoplay="" muted="muted">
+        <source src="" type="video/mp4">
+    </video>
+</section>
 
 <div class="intro" id="info">
 <div class="container">
@@ -43,26 +60,26 @@
         <div class="col-md-4 col-sm-12">
         </div>
         <div class="col-md-12 col-sm-12">
-            <h2 class="text-center contest">IT-Enterprise. SmartFactory</h2>
+            <h2 class="text-center contest">IT-Enterprise.SmartFactory</h2>
             <h2 class="study text-center padding"><strong>Кейс включает следующую информацию:</strong></h2>
         </div>
     </div>
 </div>
     <div class="container">
     <div class="row text-center">
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12" data-scrolly-down="blurInTop, iteration-count:1">
             <i class="material-icons">transform</i>
             <p class="lead">Контекст по внедрению APS/MES</p>
         </div>
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12" data-scrolly-down="blurInTop, iteration-count:1">
             <i class="material-icons">airplanemode_active</i>
             <p class="lead">Перечень реализованных функций</p>
         </div>
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12" data-scrolly-down="blurInTop, iteration-count:1">
             <i class="material-icons">settings</i>
             <p class="lead">Элементы Индустрии 4.0 в рамках проекта</p>
         </div>
-        <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12" data-scrolly-down="blurInTop, iteration-count:1">
             <i class="material-icons">donut_large</i>
             <p class="lead">Оценку полученных результатов</p>
         </div>
@@ -77,17 +94,17 @@
             <h2 class="text-center contest">Проект, описанный в кейс-стади, получил победу сразу в двух категориях на национальном конкурсе
                 «Industry 4.0 Ukraine» в 2017 году:</h2>
         </div>
-        <div class="col-md-1 col-sm-12 text-center">
+        <div class="col-md-1 col-sm-12 text-center" data-scrolly-down="blurInLeft, iteration-count:1">
             <i class="material-icons small">done</i>
         </div>
-        <div class="col-md-11 col-sm-12">
+        <div class="col-md-11 col-sm-12" data-scrolly-down="blurInLeft, iteration-count:1">
             <p class="h4 list">IT-Enterprise.SmartFactory был назван лучшим продуктом автоматизации и цифровой
                 трансформации в промышленности;</p>
         </div>
-        <div class="col-md-1 col-sm-12 text-center">
+        <div class="col-md-1 col-sm-12 text-center" data-scrolly-down="blurInLeft, iteration-count:1">
             <i class="material-icons small">done</i>
         </div>
-        <div class="col-md-11 col-sm-12">
+        <div class="col-md-11 col-sm-12" data-scrolly-down="blurInLeft, iteration-count:1">
             <p class="h4 list">Проект по управлению производством на ФЭД победил в номинации «Автоматизация года».</p>
         </div>
     </div>
@@ -105,7 +122,6 @@
                     <p class="lead text-center"><strong>Для загрузки кейс-стади заполните, пожалуйста, регистрационную форму</strong></p>
                     <script type="text/javascript" src="//mautic.b2b-insight.com/form/generate.js?id=6"></script>
                     <style>
-
                         .mauticform-button-wrapper .mauticform-button.btn-default {
                             color: whitesmoke;
                             background-color: transparent;
@@ -136,9 +152,18 @@
     </div>
 </nav>
 
+<div><script type="text/javascript" src="js/scrolly.js"></script>
+<script>
+    window.onload = function() {
+        scrolly();
+    };
+</script>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 <script type="text/javascript" src="cssanimation-gsap.js"></script>
 <script src="js/libs.min.js"></script>
+<script src="js/scrolly.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
